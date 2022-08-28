@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
+    
     <title>Azul Marino</title>
 </head>
 <body>
-    <header>
+    <header data-aos="fade-up"
+    data-aos-duration="3000">
         <div>
             <img class="logo" src="./assets/img/logoazulmarino.jpg" alt="Logo Azul Marino">
         </div>
@@ -28,15 +31,19 @@
     <main> 
          <div>        
               <nav class="navbar-clases-bloque1">
-                 <ul>
-                    <li><a href="/pages/claseschicos.html"><img src="./assets/img/nenenadando.jpg" alt="Nene nadando">Clases de chicos</a></li>
+                 <ul data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
+                    <li><a href="/pages/claseschicos.html"  data-aos="flip-left" ><img src="./assets/img/nenenadando.jpg" alt="Nene nadando">Clases de chicos</a></li>
                     <li><a href="/pages/clasesadultos.html"><img src="./assets/img/adultonadando.jpg" alt="Adulto nadando">Clases de adultos</a></li>
                  </ul>
             </nav>
         </div>
     <div>                                           
         <nav class ="navbar-clases-bloque2">
-            <ul>
+            <ul data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <li><a href="pages/acuagym.html"><img src="./assets/img/acuagym.png" alt="Gente haciendo Acuagym">Acuagym</a></li>
                 <li><a href="pages/colonia.html"><img src="./assets/img/colonia.png" alt="Nenes Jugando">Colonia de Vaciones</a></li>
             </ul>
@@ -46,7 +53,7 @@
     </div>
  </main>
 
-<footer>
+<footer data-aos="zoom-in-right" >
     <div>
         <h4>Direccion</h4>
             <p>Juan Jose Castelli 5750 , Carapachay</p>
@@ -60,6 +67,9 @@
 
     </div>
 </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

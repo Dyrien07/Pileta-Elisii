@@ -32,6 +32,9 @@ main{
 
    
 }
+main ul li{
+    list-style-type: none;
+}
 
 
 .navbar-clases-bloque1{
